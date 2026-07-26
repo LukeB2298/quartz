@@ -1,0 +1,93 @@
+@use "./variables.scss" as *;
+
+// Academic editorial styling
+
+// More generous line height for reading comfort
+article {
+  line-height: 1.75;
+}
+
+// Refined headings with serif character
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01em;
+  font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+// Tables: cleaner academic style
+table {
+  th {
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid var(--lightgray);
+  }
+
+  td {
+    border-bottom: 1px solid var(--lightgray);
+  }
+
+  th,
+  td {
+    padding: 0.6rem 1rem;
+  }
+}
+
+// Blockquotes: academic citation style
+blockquote {
+  border-left: 3px solid var(--secondary);
+  font-style: italic;
+  padding-left: 1.5rem;
+  color: var(--darkgray);
+}
+
+// Code blocks: subtle background
+code:not(pre > code) {
+  background: var(--highlight);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  border-radius: 8px;
+}
+
+// Links: academic underline style
+a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-bottom-color: var(--secondary);
+  }
+}
+
+// Horizontal rule: subtle divider
+hr {
+  border: none;
+  border-top: 1px solid var(--lightgray);
+  margin: 2rem 0;
+}
+
+// List spacing for readability
+li {
+  margin-bottom: 0.3rem;
+}
